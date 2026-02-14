@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 120px;
+
+            
+        }
+        .bx{
+             height: 300px;
+            width: 300px; 
+            background-color: aqua;
+            color:red;
+            border: 2px solid black;
+            display: flex;   
+            justify-content: center;   
+            align-items: center; 
+            text-align: center;
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: steps(3);
+            transition-delay: 0.2s;
+        }
+      .bx:hover{
+                 background-color: red;
+                 color: white;
+                 font-size:1.5em ;
+       }
+       .bx:active{
+        background-color: blue;
+       }
+
+    </style>
+</head>
+<body>
+  <div class="bx">this is a box</div>  
+</body>
+</html>
