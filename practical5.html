@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Media queries for responsiveness */
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      }
+    }
+    @media (max-width: 480px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>My Photo Gallery</h1>
+  <div class="gallery">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.G-4w4Ms2Ba2fF1uaV10SjQHaE8?pid=Api&P=0&h=180" alt="Image 1">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.bpbHihx-tImuUuAeflRKvwHaE8?pid=Api&P=0&h=180" alt="Image 2">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.9p3HA6xiJbUDhe_1XXHbMgHaEK?pid=Api&P=0&h=180" alt="Image 3">
+    <img src="https://tse1.mm.bing.net/th/id/OIP.jpii0UQlsMAe1XuvW9QglgHaE7?pid=Api&P=0&h=180" alt="Image 4">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.Zhk_fTv55oxjUj--uAvxwQHaE8?pid=Api&P=0&h=180" alt="Image 5">
+    <img src="https://tse1.mm.bing.net/th/id/OIP.14yJ_Q3Yt5WWyLN2oSQ7KgHaEl?pid=Api&P=0&h=180" alt="Image 6">
+  </div>
+</body>
+</html>
