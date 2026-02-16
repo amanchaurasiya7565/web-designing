@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>School Result Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: auto;
+      background-color: #fff;
+    }
+    caption {
+      font-size: 1.5em;
+      margin: 10px;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #3498db;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #ecf0f1;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>Class 10 Final Examination Results</caption>
+    <tr>
+      <th rowspan="2">Roll No</th>
+      <th rowspan="2">Name</th>
+      <th colspan="3">Subjects</th>
+      <th rowspan="2">Total Marks</th>
+    </tr>
+    <tr>
+      <th>Math</th>
+      <th>Science</th>
+      <th>English</th>
+    </tr>
+    <tr>
+      <td>101</td>
+      <td>Aman Sharma</td>
+      <td>85</td>
+      <td>78</td>
+      <td>90</td>
+      <td>253</td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td>Priya Singh</td>
+      <td>92</td>
+      <td>88</td>
+      <td>95</td>
+      <td>275</td>
+    </tr>
+    <tr>
+      <td>103</td>
+      <td>Rahul Verma</td>
+      <td>70</td>
+      <td>65</td>
+      <td>72</td>
+      <td>207</td>
+    </tr>
+    <tr>
+      <td colspan="5"><strong>Highest Total Marks</strong></td>
+      <td>275</td>
+    </tr>
+  </table>
+</body>
+</html>
